@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A6105A3A27562DED00F5796E /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6105A3927562DED00F5796E /* main.swift */; };
+		A6105A4827562E6D00F5796E /* UnknownAlgorithmsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6105A4727562E6D00F5796E /* UnknownAlgorithmsTest.swift */; };
+		A6105A50275630A700F5796E /* UnknownAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6105A4F275630A700F5796E /* UnknownAlgorithms.swift */; };
+		A6105A532756345F00F5796E /* UnknownAlgorithms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6105A4F275630A700F5796E /* UnknownAlgorithms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +28,21 @@
 /* Begin PBXFileReference section */
 		A6105A3627562DED00F5796E /* UnknownAlgorithms */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = UnknownAlgorithms; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6105A3927562DED00F5796E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A6105A4527562E6D00F5796E /* UnknownAlgorithmsTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnknownAlgorithmsTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6105A4727562E6D00F5796E /* UnknownAlgorithmsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownAlgorithmsTest.swift; sourceTree = "<group>"; };
+		A6105A4927562E6D00F5796E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6105A4F275630A700F5796E /* UnknownAlgorithms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnknownAlgorithms.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A6105A3327562DED00F5796E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6105A4227562E6D00F5796E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				A6105A3827562DED00F5796E /* UnknownAlgorithms */,
+				A6105A4627562E6D00F5796E /* UnknownAlgorithmsTest */,
 				A6105A3727562DED00F5796E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				A6105A3627562DED00F5796E /* UnknownAlgorithms */,
+				A6105A4527562E6D00F5796E /* UnknownAlgorithmsTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,8 +74,18 @@
 			isa = PBXGroup;
 			children = (
 				A6105A3927562DED00F5796E /* main.swift */,
+				A6105A4F275630A700F5796E /* UnknownAlgorithms.swift */,
 			);
 			path = UnknownAlgorithms;
+			sourceTree = "<group>";
+		};
+		A6105A4627562E6D00F5796E /* UnknownAlgorithmsTest */ = {
+			isa = PBXGroup;
+			children = (
+				A6105A4727562E6D00F5796E /* UnknownAlgorithmsTest.swift */,
+				A6105A4927562E6D00F5796E /* Info.plist */,
+			);
+			path = UnknownAlgorithmsTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +108,23 @@
 			productReference = A6105A3627562DED00F5796E /* UnknownAlgorithms */;
 			productType = "com.apple.product-type.tool";
 		};
+		A6105A4427562E6D00F5796E /* UnknownAlgorithmsTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6105A4A27562E6D00F5796E /* Build configuration list for PBXNativeTarget "UnknownAlgorithmsTest" */;
+			buildPhases = (
+				A6105A4127562E6D00F5796E /* Sources */,
+				A6105A4227562E6D00F5796E /* Frameworks */,
+				A6105A4327562E6D00F5796E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UnknownAlgorithmsTest;
+			productName = UnknownAlgorithmsTest;
+			productReference = A6105A4527562E6D00F5796E /* UnknownAlgorithmsTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +135,9 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					A6105A3527562DED00F5796E = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					A6105A4427562E6D00F5796E = {
 						CreatedOnToolsVersion = 12.4;
 					};
 				};
@@ -110,16 +156,37 @@
 			projectRoot = "";
 			targets = (
 				A6105A3527562DED00F5796E /* UnknownAlgorithms */,
+				A6105A4427562E6D00F5796E /* UnknownAlgorithmsTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6105A4327562E6D00F5796E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6105A3227562DED00F5796E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6105A50275630A700F5796E /* UnknownAlgorithms.swift in Sources */,
 				A6105A3A27562DED00F5796E /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6105A4127562E6D00F5796E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6105A532756345F00F5796E /* UnknownAlgorithms.swift in Sources */,
+				A6105A4827562E6D00F5796E /* UnknownAlgorithmsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +326,40 @@
 			};
 			name = Release;
 		};
+		A6105A4B27562E6D00F5796E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UnknownAlgorithmsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KJames999.UnknownAlgorithmsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A6105A4C27562E6D00F5796E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = UnknownAlgorithmsTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.KJames999.UnknownAlgorithmsTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -276,6 +377,15 @@
 			buildConfigurations = (
 				A6105A3E27562DED00F5796E /* Debug */,
 				A6105A3F27562DED00F5796E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6105A4A27562E6D00F5796E /* Build configuration list for PBXNativeTarget "UnknownAlgorithmsTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6105A4B27562E6D00F5796E /* Debug */,
+				A6105A4C27562E6D00F5796E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
