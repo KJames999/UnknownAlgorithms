@@ -26,19 +26,10 @@ class UnknownAlgorithms {
         var keyList = input
         keyList.sort()
         var keyCount = [Int]()
-        var mode = input[0]
         var count = 1
-        for k in 0...input.count-1 {
-            for i in 0...input.count-1 {
-                if keyList[k] == input[i] {
-                    count += 1
-                }
-            }
-            keyCount.append(count)
-        }
-        for i in 0...keyCount.count-1 {
+        var mode = input[0]
+        while
             
         }
-        return mode
     }
 }
